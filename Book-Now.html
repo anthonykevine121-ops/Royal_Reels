@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Book Now - Royal Reels</title>
+
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body class="booking-page">
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+    <header class="booking-header position-fixed">
+
+        <a class="booking-brand" href="index.html#home" aria-label="Royal Reels home">
+
+            <img src="images/logo.jpeg" alt="Royal Reels Logo" width="42" height="42">
+
+            <span>ROYAL REELS</span>
+
+        </a>
+
+
+        <a class="booking-back" href="index.html#packages">
+
+            <span aria-hidden="true">&larr;</span>
+
+            Back to packages
+
+        </a>
+
+    </header>
+
+
+    <!-- =========================
+         MAIN
+    ========================== -->
+    <main class="booking-main">
+
+        <!-- INTRO -->
+        <section class="booking-intro" aria-labelledby="booking-title">
+
+            <p class="booking-eyebrow">
+
+                Mobile videography
+                <span aria-hidden="true">•</span>
+
+                Reels
+                <span aria-hidden="true">•</span>
+
+                Event content
+
+            </p>
+
+
+            <h1 id="booking-title">
+                Let's make it memorable.
+            </h1>
+
+
+            <p>
+                Tell us a little about your plans and the story
+                you want us to capture.
+            </p>
+
+        </section>
+
+
+        <!-- =========================
+             BOOKING FORM
+        ========================== -->
+        <form class="booking-form" id="bookingForm">
+
+
+            <!-- =====================
+                 PROJECT DETAILS
+            ====================== -->
+            <fieldset class="booking-fieldset">
+
+                <legend>
+                    Your project
+                </legend>
+
+
+                <div class="booking-fields">
+
+
+                    <!-- PACKAGE -->
+                    <label class="booking-field">
+
+                        <span>
+                            Package
+                        </span>
+
+
+                        <select name="package" required>
+
+                            <option value="" disabled selected>
+                                Select a package
+                            </option>
+
+
+                            <option value="Short-form videos - ₦20,000 per video">
+                                Short-form videos - ₦20,000 per video
+                            </option>
+
+
+                            <option value="Event highlights - ₦70,000">
+                                Event highlights - ₦70,000
+                            </option>
+
+
+                            <option value="Wedding highlights starter - ₦100,000">
+                                Wedding highlights starter - ₦100,000
+                            </option>
+
+
+                            <option value="Wedding full premium - ₦200,000">
+                                Wedding full premium - ₦200,000
+                            </option>
+
+
+                            <option value="Burials full coverage - ₦100,000">
+                                Burials full coverage - ₦100,000
+                            </option>
+
+
+                            <option value="Custom project">
+                                Custom project
+                            </option>
+
+                        </select>
+
+                    </label>
+
+
+
+                    <!-- EVENT DATE -->
+                    <label class="booking-field">
+
+                        <span>
+                            Event date
+                        </span>
+
+
+                        <input id="event-date" type="date" name="event-date" max="9999-12-31" required>
+
+                    </label>
+
+
+
+                    <!-- LOCATION -->
+                    <label class="booking-field">
+
+                        <span>
+                            Event location
+                        </span>
+
+
+                        <input type="text" name="location" placeholder="City or venue" autocomplete="address-level2"
+                            required>
+
+                    </label>
+
+
+
+                    <!-- DURATION -->
+                    <label class="booking-field">
+
+                        <span>
+                            Estimated coverage
+                        </span>
+
+
+                        <select name="duration" required>
+
+                            <option value="" disabled selected>
+                                Select duration
+                            </option>
+
+
+                            <option value="1-2 hours">
+                                1-2 hours
+                            </option>
+
+
+                            <option value="Half day">
+                                Half day
+                            </option>
+
+
+                            <option value="Full day">
+                                Full day
+                            </option>
+
+
+                            <option value="Not sure yet">
+                                Not sure yet
+                            </option>
+
+                        </select>
+
+                    </label>
+
+
+
+                    <!-- PROJECT DETAILS -->
+                    <label class="booking-field booking-field-wide">
+
+                        <span>
+                            What would you like captured?
+                        </span>
+
+
+                        <textarea name="project-details" rows="4"
+                            placeholder="Share the important details, video needs, and any special requests."
+                            required></textarea>
+
+                    </label>
+
+                </div>
+
+            </fieldset>
+
+
+
+            <!-- =====================
+                 CONTACT DETAILS
+            ====================== -->
+            <fieldset class="booking-fieldset">
+
+                <legend>
+                    Your contact details
+                </legend>
+
+
+                <div class="booking-fields">
+
+
+                    <!-- FULL NAME -->
+                    <label class="booking-field">
+
+                        <span>
+                            Full name
+                        </span>
+
+
+                        <input type="text" name="name" autocomplete="name" placeholder="Your name" required>
+
+                    </label>
+
+
+
+                    <!-- EMAIL -->
+                    <label class="booking-field">
+
+                        <span>
+                            Email address
+                        </span>
+
+
+                        <input type="email" name="email" autocomplete="email" placeholder="you@example.com" required>
+
+                    </label>
+
+
+
+                    <!-- PHONE -->
+                    <label class="booking-field">
+
+                        <span>
+                            Phone or WhatsApp
+                        </span>
+
+
+                        <input type="tel" name="phone" autocomplete="tel" placeholder="Your number" required>
+
+                    </label>
+
+
+
+                    <!-- REPLY METHOD -->
+                    <label class="booking-field">
+
+                        <span>
+                            Preferred reply
+                        </span>
+
+
+                        <select name="reply-method" required>
+
+                            <option value="" disabled selected>
+                                Choose contact method
+                            </option>
+
+
+                            <option value="Email">
+                                Email
+                            </option>
+
+
+                            <option value="Phone call">
+                                Phone call
+                            </option>
+
+
+                            <option value="WhatsApp">
+                                WhatsApp
+                            </option>
+
+                        </select>
+
+                    </label>
+
+                </div>
+
+            </fieldset>
+
+
+
+            <!-- =====================
+                 SUBMIT
+            ====================== -->
+            <div class="booking-submit-row">
+
+
+                <p class="booking-notice">
+
+                    Prices may vary based on location,
+                    coverage duration, video count,
+                    and creative requests.
+
+                </p>
+
+
+                <button class="booking-submit" type="submit">
+
+                    Send booking request
+
+                    <span aria-hidden="true">
+                        &rarr;
+                    </span>
+
+                </button>
+
+            </div>
+
+
+        </form>
+
+    </main>
+
+    <nav class="mobile-bottom-nav" aria-label="Mobile navigation">
+        <div class="mobile-bottom-nav-inner">
+            <a class="mobile-bottom-nav-item" href="index.html#home">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 10.5 12 3l9 7.5M5 9.5V21h14V9.5M9 21v-6h6v6" /></svg>
+                <span>Home</span>
+            </a>
+            <a class="mobile-bottom-nav-item" href="rate-card.html">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 4h14v16H5zM8 8h8M8 12h8M8 16h4" /></svg>
+                <span>Rates</span>
+            </a>
+            <a class="mobile-book-button" href="#booking-title" aria-label="Back to booking form" title="Back to booking form" aria-current="location">
+                <span class="mobile-book-icon" aria-hidden="true">+</span>
+                <span>Book</span>
+            </a>
+            <a class="mobile-bottom-nav-item" href="gallery.html">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="16" rx="2" /><circle cx="8" cy="9" r="1.2" /><path d="m3 17 5-5 4 4 3-3 6 5" /></svg>
+                <span>Gallery</span>
+            </a>
+            <a class="mobile-bottom-nav-item" href="index.html#about">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="3.5" /><path d="M5 21c.7-4 3-6 7-6s6.3 2 7 6" /></svg>
+                <span>About</span>
+            </a>
+        </div>
+    </nav>
+
+    <footer class="site-footer">
+        <div class="footer-cta">
+            <div>
+                <p class="footer-eyebrow">Your story starts here</p>
+                <h2>Have a moment in mind?</h2>
+            </div>
+            <a class="footer-book" href="Book-Now.html">Let's plan your shoot <span aria-hidden="true">&rarr;</span></a>
+        </div>
+        <div class="footer-main">
+            <div class="footer-brand-block">
+                <a class="footer-brand" href="index.html#home" aria-label="Royal Reels home">
+                    <img src="images/logo.jpeg" alt="" width="42" height="42">
+                    <span>ROYAL REELS</span>
+                </a>
+                <p>Mobile videography, reels, and event content. Real moments, told with intention.</p>
+                <a class="footer-contact" href="https://wa.me/2349134750393" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <path d="M20.5 3.5A11.7 11.7 0 0 0 3.1 16.8L2 22l5.3-1.4A11.7 11.7 0 1 0 20.5 3.5Zm-7.8 17.2c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.1.8 1-3.1-.3-.5a9.7 9.7 0 1 1 17 0 9.7 9.7 0 0 1-9.2 5.4Zm5.3-7.2c-.3-.2-1.7-.8-2-.9-.3-.1-.5-.2-.7.2-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1a8.1 8.1 0 0 1-2.4-1.5c-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.2-.7l.3-.3c.1-.1.2-.3.3-.5.1-.2 0-.4 0-.5l-.1-.4c-.1-.3-.7-1.7-.9-2.3-.2-.5-.4-.4-.7-.4h-.6c-.2 0-.5.1-.7.4-.3.3-1 1-1 2.4s1.1 2.8 1.3 3c.2.2 2.1 3.3 5.1 4.6.7.3 1.2.5 1.7.6.8.2 1.5.2 2.1.1.6-.1 1.7-.7 2-1.3.3-.7.3-1.2.2-1.3-.1-.1-.3-.2-.6-.4Z"></path>
+                    </svg>
+                    <span>Chat with us on WhatsApp</span>
+                    <span aria-hidden="true">&nearr;</span>
+                </a>
+                <div class="footer-socials" role="group" aria-label="Social media">
+                    <a href="https://www.instagram.com/officialroyal_reels?stkn=MTJ2NTk3cTl4YmVkdA%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                            <rect x="3.5" y="3.5" width="17" height="17" rx="5"></rect>
+                            <circle cx="12" cy="12" r="4"></circle>
+                            <circle class="footer-social-dot" cx="17.6" cy="6.7" r="1"></circle>
+                        </svg>
+                    </a>
+                    <a href="https://www.tiktok.com/@the_mobilevideographer?_r=1&_t=ZS-9AAEpBnpHGO" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                            <path d="M16.6 3.5c.4 2.4 1.8 3.8 4.1 4v3.2a9 9 0 0 1-4.1-1.3v6.4a5.8 5.8 0 1 1-5.8-5.8c.4 0 .8 0 1.2.1v3.3a2.7 2.7 0 1 0 1.5 2.4V3.5h3.1Z"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <nav class="footer-nav" aria-label="Footer navigation">
+                <div class="footer-nav-group">
+                    <h3>Explore</h3>
+                    <a href="index.html#home">Home</a>
+                    <a href="rate-card.html">Rate card</a>
+                    <a href="gallery.html">Gallery</a>
+                </div>
+                <div class="footer-nav-group">
+                    <h3>Work with us</h3>
+                    <a href="index.html#services">Services</a>
+                    <a href="index.html#packages">Packages</a>
+                    <a href="Book-Now.html">Book now</a>
+                </div>
+            </nav>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2026 Royal Reels</span>
+            <a href="index.html#home">Back to top <span aria-hidden="true">&uarr;</span></a>
+        </div>
+    </footer>
+
+
+
+    <!-- =========================
+         WHATSAPP JAVASCRIPT
+    ========================== -->
+    <script>
+
+        /*
+        ==========================================
+        ROYAL REELS WHATSAPP BOOKING
+        ==========================================
+        */
+
+        const eventDateInput = document.getElementById("event-date");
+        const today = new Date();
+        const localToday = [
+            today.getFullYear(),
+            String(today.getMonth() + 1).padStart(2, "0"),
+            String(today.getDate()).padStart(2, "0")
+        ].join("-");
+
+        eventDateInput.min = localToday;
+
+        const bookingForm = document.getElementById("bookingForm");
+
+        bookingForm.addEventListener("submit", function (event) {
+
+                // Stop the form from refreshing the page
+                event.preventDefault();
+
+
+                /*
+                ==========================================
+                IMPORTANT:
+                CHANGE THIS TO YOUR ROYAL REELS NUMBER
+                ==========================================
+
+                Example:
+
+                08012345678
+
+                becomes:
+
+                2348012345678
+
+                Do NOT add:
+                +
+                spaces
+                brackets
+                ==========================================
+                */
+
+                const whatsappNumber = "2347016181691";
+
+
+                /*
+                ==========================================
+                GET FORM VALUES
+                ==========================================
+                */
+
+                const packageName =
+                    document.querySelector(
+                        '[name="package"]'
+                    ).value;
+
+
+                const eventDate =
+                    document.querySelector(
+                        '[name="event-date"]'
+                    ).value;
+
+
+                const location =
+                    document.querySelector(
+                        '[name="location"]'
+                    ).value;
+
+
+                const duration =
+                    document.querySelector(
+                        '[name="duration"]'
+                    ).value;
+
+
+                const projectDetails =
+                    document.querySelector(
+                        '[name="project-details"]'
+                    ).value;
+
+
+                const name =
+                    document.querySelector(
+                        '[name="name"]'
+                    ).value;
+
+
+                const email =
+                    document.querySelector(
+                        '[name="email"]'
+                    ).value;
+
+
+                const phone =
+                    document.querySelector(
+                        '[name="phone"]'
+                    ).value;
+
+
+                const replyMethod =
+                    document.querySelector(
+                        '[name="reply-method"]'
+                    ).value;
+
+
+
+                /*
+                ==========================================
+                FORMAT EVENT DATE
+                ==========================================
+                */
+
+                let formattedDate = eventDate;
+
+
+                if (eventDate) {
+
+                    const date =
+                        new Date(eventDate + "T00:00:00");
+
+
+                    formattedDate =
+                        date.toLocaleDateString(
+                            "en-NG",
+                            {
+                                weekday: "long",
+                                year: "numeric",
+                                month: "long",
+                                day: "numeric"
+                            }
+                        );
+
+                }
+
+
+
+                /*
+                ==========================================
+                CREATE WHATSAPP MESSAGE
+                ==========================================
+                */
+
+                const message =
+
+                    `🎬 *ROYAL REELS — NEW BOOKING REQUEST*
+
+━━━━━━━━━━━━━━━━━━━━
+
+📦 *PROJECT DETAILS*
+
+*Package:*
+${packageName}
+
+*Event Date:*
+${formattedDate}
+
+*Event Location:*
+${location}
+
+*Estimated Coverage:*
+${duration}
+
+*What would you like captured?*
+${projectDetails}
+
+━━━━━━━━━━━━━━━━━━━━
+
+👤 *CLIENT CONTACT DETAILS*
+
+*Full Name:*
+${name}
+
+*Email:*
+${email}
+
+*Phone / WhatsApp:*
+${phone}
+
+*Preferred Reply Method:*
+${replyMethod}
+
+━━━━━━━━━━━━━━━━━━━━
+
+📩 *Please contact me regarding this booking.*
+
+Thank you for choosing *ROYAL REELS* 🎥`;
+
+
+
+                /*
+                ==========================================
+                ENCODE MESSAGE
+                ==========================================
+                */
+
+                const encodedMessage =
+                    encodeURIComponent(message);
+
+
+
+                /*
+                ==========================================
+                CREATE WHATSAPP LINK
+                ==========================================
+                */
+
+                const whatsappURL =
+                    `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+
+
+
+                /*
+                ==========================================
+                OPEN WHATSAPP
+                ==========================================
+                */
+
+                window.open(
+                    whatsappURL,
+                    "_blank"
+                );
+
+                window.alert("Your booking request has been sent successfully. We will contact you on WhatsApp soon.");
+                bookingForm.reset();
+
+            });
+
+    </script>
+
+</body>
+
+</html>
